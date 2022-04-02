@@ -13,9 +13,11 @@
 - Git 버전관리 프로세스
   - 준비단계
     - remote repository 생성
-    - clone : 로컬위치에 repository를 가져옴 -작업단계
+    - clone : 로컬위치에 repository를 가져옴
+  - 작업단계
     - commit : 수정 확인 단계
-    - push : remote repository에 업로드 -협업단계
+    - push : remote repository에 업로드
+  - 협업단계
     - branch
     - pull
 
