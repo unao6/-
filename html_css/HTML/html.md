@@ -111,3 +111,5 @@ WYSIWYG(What You See Is What You Get)
 ```
 <a href="url"> 텍스트 </a>
 ```
+
+- URL(Uniform Resource Locator) : 파일위치식별자
