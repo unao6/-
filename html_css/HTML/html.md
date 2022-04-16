@@ -231,3 +231,122 @@ https://developers.google.com/youtube/player_parameters?hl=ko#autoplay
 ```
 <iframe src="youtube-url?parameter1=0&parameter2=1&parameter3=0"></iframe>
 ```
+
+### 콘텐츠 강조
+
+- 제목의 역할까지는 아니지만, 중요/강조 의미를 가진 텍스트 표시
+
+- em(phasized)
+- strong
+- mark
+
+```
+strong > mark > em
+```
+
+### 그 밖의 Text Element
+
+- b(old)
+- i(talic)
+
+## HTML Structure
+
+### Semantic Element
+
+- grouping 또는 구분하는 Element를 의미있게 사용
+- 의미있는 grouping Element가 추가
+- Contents Element와 Semantic Element를 목적에 맞게 제대로 구성하는 것이
+  검색엔진(SEO:Search Engine Optimization)에 웹사이트 관련 정보를 잘 노출시킬 수 있는 방법중의 하나
+
+- header
+  - 소개 콘텐츠(logo...), 탐색링크(상단메뉴, 검색바), 로그인, 언어선택...
+
+- nav(igation)
+  - 메뉴
+
+- section
+  - 제목, 내용으로 구성된 하나의 영역
+
+- article
+  - 독립적인 글 또는 콘텐츠
+
+- aside
+  - 부수적인 콘텐츠 영역
+
+- footer
+  - 연락처
+  - 사이트 맵
+  - 저작권
+  - 연관 링크
+
+- figure
+  - embeded contents 또는 그림형태의 콘텐츠를 grouping 하는 요소
+
+### Container Element
+
+- 단순 구역 나누는 / grouping 하는 요소
+- div(ision)
+- span
+
+## 파일 경로 표시 방식
+
+- 절대 경로(주소) 방식
+  - 항상 똑같은 경로(주소) 표시 가능
+  - 주소 표시 방식이 복잡함
+```
+href="www.naver.com/html/home.html"
+src="www.instagram.com/html/photo.jpg"
+```
+
+- 상대 경로 방식
+  - 출발 위치 기준에 따라서 상대적으로 경로(주소) 표시 형태가 변경
+  - 같은 자원의 위치에 대해서 표시 방식이 너무 많음
+  - 자원의 위치가 이동하면 주소를 모두 수정해야함
+  - ../ : 한 단계 상위 폴더로 이동
+```
+/ - html - home.html
+         - sub.html
+  - images - photo.jpg
+
+위치 기준 : sub.html
+
+href="home.html"
+src="../images/photo.jpg"
+```
+
+- root 상대 경로 방식
+  - root : 최상위 경로(/)
+  - root 경로에서 부터 찾아갈 수 있도록 상대 경로 방식을 변형
+```
+/ - html - home.html
+         - sub.html
+  - images - photo.jpg
+
+위치 기준 : sub.html
+
+href="/html/home.html"
+src="/images/photo.jpg"
+```
+
+비트계산 - ip, 문자표시, 색표시
+
+## Block & Inline
+
+- 구역을 구분하는 Semantic Element, Container Element 뿐만 아니라 Contents를 표현하는 Element도 화면에 영역으로 표시됨
+
+### Block Element
+
+- 요소의 영역이 부모요소를 기준으로 가능한 최대 너비로 채워짐
+- 요소와 요소는 줄바꿈되어 새 줄에 표시됨 (만약에 너비가 꽉 채워지지 않게하면 줄바꿈 안됨)
+
+### Inline Element
+
+- 요소의 영역이 Contents 또는 자식요소를 기준으로 맞춰짐
+- 요소와 요소는 한 줄에 나란히 표시가 됨
+
+## head 태그
+
+- meta: 웹사이트 추가 정보
+- title: 웹사이트 대표 제목
+- link, script: css, js 파일 불러올 때 사용
+- style, script: css, js 코드를 직접 사용할 때 사용 
