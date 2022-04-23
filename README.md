@@ -90,3 +90,6 @@
     - RGB(가산혼합: 스크린) : Red, Blue, Green 색의 혼합
       - R(1byte), G(1byte), B(1byte) // Red를 256개의 단계로 표현 ,...
     - CMYK(감산혼합: 프린터) : Cyan(청록), Magenta(자주), Yellow, Key(Black) 색의 혼합
+  - 색표현 값
+    - 16진수
+    - 10진수
