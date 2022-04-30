@@ -5,61 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Web Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/project/css/style.css">
   </head>
   <body>
-    <header>
-      <h1> <!-- 웹사이트의 가장 큰 제목 (로고) -->
+    <header class="header">
+      <h1 class="logo"> <!-- 웹사이트의 가장 큰 제목 (로고) -->
         <img src="/project/resources/logo.png" alt="Piroll logo">
       </h1>
-      <nav>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">CONTACT</a></li>
+      <nav class="gnb"> <!-- Global Navigation Bar -->
+        <ul class="gnb-list">
+          <li class="gnb-list-item"><a href="#" class="gnb-list-link">HOME</a></li>
+          <li class="gnb-list-item"><a href="#" class="gnb-list-link">ABOUT</a></li>
+          <li class="gnb-list-item"><a href="#" class="gnb-list-link">CONTACT</a></li>
         </ul>
       </nav>
     </header>
-    <section>
-      <h2>UI/UX & Graphic Designer</h2>
-      <p>
-        I am a Graphic & Web Designer based in New York, specializing in User Interface Design and Development.
+    <section class="section1">
+      <h2 class="section-heading">UI/UX & Graphic Designer</h2>
+      <p class="section-paragraph">
+        <!-- I am a Graphic & Web Designer based in New York, specializing in User Interface Design and Development. -->
         HTML5는 HTML 4.01, XHTML 1.0, DOM 레벨 2 HTML에 대한 차기 표준 제안이다. 비디오, 오디오 등 다양한 부가기능과 최신 멀티미디어 콘텐츠를 액티브X 없이 브라우저에서 쉽게 볼 수 있게 하는 것을 목적으로 한다.
       </p>
     </section>
-    <section>
-      <div>
-        <img src="/project/resources/image_01.jpg" alt="">
-        <img src="/project/resources/image_02.jpg" alt="">
-        <video autoplay muted loop>
+    <section class="section2">
+      <div class="group">
+        <figure class="visual-area"><img src="/project/resources/image_01.jpg" alt=""></figure>
+        <figure class="visual-area"><img src="/project/resources/image_02.jpg" alt=""></figure>
+        <figure class="visual-area"><video autoplay muted loop>
           <source src="/resources/mov_bbb.mp4" type="video/mp4">
-        </video>
-        <img src="/project/resources/image_03.jpg" alt="">
+        </video></figure>
+        <figure class="visual-area"><img src="/project/resources/image_03.jpg" alt=""></figure>
       </div>
-      <div>
-        <img src="/project/resources/image_04.jpg" alt="">
-        <img src="/project/resources/image_05.jpg" alt="">
-        <img src="/project/resources/image_06.jpg" alt="">
-        <img src="/project/resources/image_07.jpg" alt="">
+      <div class="group">
+        <figure class="visual-area"><img src="/project/resources/image_04.jpg" alt=""></figure>
+        <figure class="visual-area"><img src="/project/resources/image_05.jpg" alt=""></figure>
+        <figure class="visual-area"><img src="/project/resources/image_06.jpg" alt=""></figure>
+        <figure class="visual-area"><img src="/project/resources/image_07.jpg" alt=""></figure>
       </div>
-      <div>
-        <img src="/project/resources/image_08.jpg" alt="">
-        <img src="/project/resources/image_09.jpg" alt="">
-        <img src="/project/resources/image_10.jpg" alt="">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/5ch94AaPZRQ?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="group">
+        <figure class="visual-area"><img src="/project/resources/image_08.jpg" alt=""></figure>
+        <figure class="visual-area"><img src="/project/resources/image_09.jpg" alt=""></figure>
+        <figure class="visual-area"><img src="/project/resources/image_10.jpg" alt=""></figure>
+        <figure class="visual-area"><iframe width="560" height="315" src="https://www.youtube.com/embed/5ch94AaPZRQ?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
       </div>
     </section>
-    <footer>
-      <article>
+    <footer class="footer">
+      <article class="article">
         <mark>Piroll Design, Inc.</mark> <!-- HTML5에서 추가된 태그 -->
         <em>&copy; 2022 Piroll. All Right Reserved</em>        
       </article>
-      <article>
+      <article class="article">
         <address>
           <div>hello@pirolltheme.com</div>
           <div>+82 02-3333-7777</div>
         </address>
       </article>
-      <article>
+      <article class="article">
         <ul>
           <li><a href="#">Facebook</a></li>
           <li><a href="#">Instagram</a></li>

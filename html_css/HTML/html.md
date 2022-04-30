@@ -350,3 +350,4 @@ src="/images/photo.jpg"
 - title: 웹사이트 대표 제목
 - link, script: css, js 파일 불러올 때 사용
 - style, script: css, js 코드를 직접 사용할 때 사용 
+
