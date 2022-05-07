@@ -381,3 +381,37 @@ Ex) padding: 20px, border: 1px, 박스전체크기: 300px로 하고싶다? width
 
 - 배경/디자인 표시
   - background-image
+
+## 반응형 웹 디자인
+
+- Responsive Web
+  - OSMU(One Source Multi Use / Source란, HTML Contents)
+    - HTML file => One
+    - CSS => Multi (여러 디바이스에 대응 될 수 있도록 만든다)
+
+- Adaptive Web
+  - MSMU(Multi Source Multi Use)
+  - PC Web, Mobile Web 분리 
+
+## 반응형 웹 디자인 기능
+
+- viewport
+  - <meta> 태그 삽입
+  - HTML Contents가 해당 디바이스 화면에 최적화되어 표시
+
+- media query
+  - @media
+  - 미디어 종류와 해상도 구분
+
+- 모니터(스크린) 해상도 개념
+  - pixel ratio: pc 픽셀을 기준으로 했을 때 모바일 디바이스의 밀도 배수
+  - CSS width/height: 모바일 디바이스의 해상도에서 밀도를 1이라고 했을 때의 크기
+
+- 해상도 구간 나누기
+  - 디바이스나 상황에 따라서 맞춰 주어야 함.
+  - pc: 1920px 기준
+  - tablet: 1024px
+  - smart phone: 640px
+
+  
+

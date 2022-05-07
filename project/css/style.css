@@ -103,7 +103,6 @@ font-family: 'Nunito Sans', sans-serif; */
 .visual-area{
   width: 340px;
   height: 300px;
-  border: 1px solid black;
   overflow: hidden;
 }
 
@@ -181,7 +180,7 @@ font-family: 'Nunito Sans', sans-serif; */
 }
 
 .icon-list {
-  margin: 0 100px;
+  margin: 0 30px;
   color: #fff; /* #ff3399 -> #f39 */
   padding-left: 60px;
   font-family: 'Montserrat', sans-serif;
@@ -240,4 +239,30 @@ font-family: 'Nunito Sans', sans-serif; */
   color: #ffffff;
   margin: 30px auto 0;
   line-height: 55px;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .group{
+    flex-wrap: wrap;
+    width: 680px;
+    margin:auto;
+  }
+}
+
+/* smart phone */
+@media screen and (max-width: 700px) {
+  /* home */
+  .group{
+    width: 340px;
+  }
+
+  /* about */
+  .section-icon {
+    flex-wrap:wrap;
+  }
+  .icon-list {
+    width: 200px;
+    margin: 10px 0;
+  }
 }
