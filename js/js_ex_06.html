@@ -17,7 +17,7 @@
     // 배열 전체 접근 - Array Full Access
       console.log(cars);
     // 배열 원소 접근 - Array Element Access
-      for(let i=0; i<3; i++){
+      for(let i=0; i<cars.length; i++){
         console.log(cars[i]);
       }
 
@@ -25,6 +25,48 @@
       console.log(cars);
 
       // 원소 삭제
+      cars.pop(); // 배열데이터의 가장 마지막 원소 삭제
+      console.log(cars);
+
+      // 원소 추가
+      cars.push('e'); // 배열 끝에 새로운 원소 추가
+      console.log(cars);
+
+      // 객체 데이터 입출력
+
+      // 생성(create)
+      const carInfo = {
+        company: 'Fiat',
+        color: 'white'
+        showColor: function(){
+          console.log('color : '+ this.color);
+        }
+      }
+
+      // 출력(Read)
+      console.log(carInfo);
+      console.log(carInfo.company);
+      console.log(carInfo.color);
+
+      // 갱신(Update)
+      carsInfo.color = 'red';
+      console.log(carInfo);
+
+      //carInfo = {
+      //   company: 'BMW'
+      //   color: red;
+      // }  불가능
+
+      // 삭제(Delete)
+      delete carInfo.company;
+      console.log(carInfo);
+
+      // 원소 추가
+      carInfo.model = '500';
+      console.log(carInfo);
+
+      // 메소드 사용
+
   </script>
 </head>
 <body>

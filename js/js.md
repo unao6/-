@@ -155,9 +155,163 @@ myFunction();
 myFunction();
 ```
 
+- 함수 선언(정의)의 형식
+
+```
+1. 
+function myFunction(){
+  실행코드;
+}
+
+2. 익명함수를 만들어서 변수에 할당하는 형태
+let myFunction = function(){
+  실행코드;
+}
+
+3. 익명함수 : 선언과 동시에 실행
+function(){
+  실행코드;
+}
+```
+
 ### 배열/객체/Class
+
+- 참조형 데이터
+  - 기본형 데이터는 변수 저장공간에 데이터가 직접 저장
+    참조형 데이터는 제3의 공간에 데이터가 저장되고 변수 저장공간에는 데이터가 저장된 위치값이 저장
 
 - 배열
   - 참조형 데이터
   - 데이터 집합
   - 같은 타입, 같은 의미 데이터
+  - 배열 객체에 포함된 property, method를 사용해서 배열 데이터를 좀더 수월하게 제어할 수 있음
+
+```
+const a = [1, 2, 3];
+
+원소 변경 가능
+a[0] = 5; (o)
+
+배열 변경 불가능
+a = [4, 5, 6]; (x)
+
+```
+
+- 객체
+  - 참조형 데이터
+  - 소속(대상)이 같은 데이터
+  - 각각의 데이터에 name(key)을 붙여서 사용
+  - property(객체 특성/속성)
+    - 일반 데이터의 변수와 같은 역할
+    - 객체 변수
+  - method(객체 기능)
+    - 일반 현태의 함수와 같은 역할
+    - 객체 함수
+  - 객체 데이터는 property, method로 모두 그룹화하는 것이 좋은 방식
+
+```
+const a = {
+  name: 'BBB',
+  color: 'white'
+}
+
+원소 변경
+a.color = 'red';
+
+객체 변경  -  불가능
+a = {
+  name: 'DDD',
+  color: ' blue
+}
+```
+
+- 객체 Method 선언
+
+```
+const a = {
+  name: 'BBB',
+  color: 'white',
+  showColor: function(){
+    console.log('color : ' + color);
+  }
+}
+```
+
+## 활용
+
+### HTML DOM
+
+- DOM (Document Object Model): HTML Element를 객체 데이터로 만든 모델
+- Javascript에서 DOM에 엑세스하고 제어함으로써 웹페이지 콘텐츠를 제어
+- HTML Contents 제어(CRUD), CSS 스타일 속성 제어
+
+#### DOM 객체
+
+- Javascript
+  - ES5, ES6: 기본 javascript
+  - HTML DOM : HTML API
+
+  - Property
+
+```
+HTML
+```
+
+  - Method
+    - Access(접근)
+    - HTML4 API
+
+```
+<h1 id="heading" class="title">heading</h1>
+
+document.getElementByID('heading')
+document.getElementsByTagName('h1')
+document.getElementsByClassName('title')
+
+```
+
+  - HTML5 API
+```
+<h1 id="heading" class="title">heading</h1>
+<h1 class="title">heading</h1>
+
+document.querySelector('#heading')
+document.querySelector('h1') // 첫번째 요소에만 접근하고 끝남! 두번째/세번째는 접근하지 않음
+document.querySelector('.title') // 위와 같음
+
+document.querySelectorAll('h1') // 첫번째 것부터 병렬로 접근
+document.querySelectorAll('.title') // 위와 같음
+```
+  - JS 동적 작업
+    - Create
+    - Read
+    - Update
+    - Delete/Remove
+
+```
+document.createElement() //생성
+document.appendChild()  // DOM에 객체를 추가 => 웹페이지에 표시/ 둘을 같이 사용해야 생성이 완료!
+
+document.removeCHild()
+```
+
+** 직접 입력한 내용이 페이지에 표시되는 경우: 정적(static) 내용
+** JS 기능을 통해서 내용이 추가/수정/삭제 되는 경우 : 동적(dynamic) 내용
+
+- 속성 변경
+  - HTML Attribute
+  ```
+
+  ```
+
+### Form 요소
+
+- input
+  - type="text" : text 한줄 입력
+  - type="password" : password 입력, 
+  - type="checkbox"
+  - type="radio"
+  - type="file"
+  - type="submit"
+  - type="reset"
+  - type="button"
