@@ -308,10 +308,39 @@ document.removeCHild()
 
 - input
   - type="text" : text 한줄 입력
-  - type="password" : password 입력, 
-  - type="checkbox"
-  - type="radio"
-  - type="file"
-  - type="submit"
-  - type="reset"
-  - type="button"
+  - type="password" : password 입력, 내용표시x
+  - type="checkbox" : 중복선택이 가능
+  - type="radio" : 단일선택 가능
+  - type="file" : 파일 업로드
+  - type="submit" : 내용을 서버로 전송 버튼
+  - type="reset" : 입력된 내용을 초기화 버튼
+  - type="button" : 일반 버튼
+
+- select
+  - option 요소를 사용해서 목록의 아이템
+
+- button
+  - submit, reset, button 3가지 type
+
+### 이벤트(Event)
+
+- 상태변화
+  - 현재 상태에서 다른 상태로의 변화
+  ex) 내용입력, 마우스클릭, 마우스이동 ...
+  - 이벤트 발생
+    - 상태 변화에 따른 신호 표시
+
+- 상태 변화에 따라 특정 기능 실행
+  - 이벤트 리스닝
+    - 발생된 이벤트 감지
+  - 이벤트 핸들링
+    - 발생된 이벤트에 따라 특정 기능 실행
+
+- 이벤트 종류
+  - 브라우저 이벤트
+    - HTML 로딩완료 이벤트(load)
+  - 사용자 이벤트
+    - 마우스 이벤트
+      - 이동(move), 클릭(click)
+    - 키보드 이벤트
+      - 내용 입력(key----)
