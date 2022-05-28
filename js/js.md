@@ -344,3 +344,22 @@ document.removeCHild()
       - 이동(move), 클릭(click)
     - 키보드 이벤트
       - 내용 입력(key----)
+
+### Effect(효과)
+
+- show/hide
+- fade in/out
+- slide in/out
+
+- image(visual) rolling / carousel 효과
+  - 이미지 또는 비주얼요소를 순서대로 반복해서 보여줄 때 사용하는 효과
+
+- animation, motion 효과
+  - 시작상태에서 끝상태로 변화할때 중간과정을 모두 보여주는것
+  - (애니메이션은 스토리추가? , 모션은 움직임?)
+  - *** css motion 효과를 사용 *** 이것만 사용해도 충분! 적당!
+   - 기본적인 CSS property(width, height, top, left ...)
+   - css3 추가된 property(transform)
+   - transition 속성을 추가해서 중간과정을 표시
+   
+  

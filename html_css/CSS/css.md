@@ -409,9 +409,30 @@ Ex) padding: 20px, border: 1px, 박스전체크기: 300px로 하고싶다? width
 
 - 해상도 구간 나누기
   - 디바이스나 상황에 따라서 맞춰 주어야 함.
-  - pc: 1920px 기준
-  - tablet: 1024px
-  - smart phone: 640px
+  - Break Point(변경점)
+    - pc: 1920px 기준
+    - tablet: 1024px
+    - smart phone: 640px
+  - 해상도 구간 지정
+    - <640px
+    - <1024px
+    - <1920px
+
+## position
+
+- position 속성과 속성값을 적용하고, 좌표값을 적용해서 박사를 단독으로 위치 지정할 수 있음
+- relative, absolute, fixed
+- 좌표 표시 속성
+  - top, right, bottom, left (top과 left를 많이 사용하게됨. 좌표체계이기 때문)
+- position:absolute;
+  - 좌표 배치는 부모요소를 기준으로 배치
+  - 부모요소에는 position 속성중 하나가 적용되어 있어야 함
+
+## z-index
+
+- 겹쳐있는 박스의 앞뒤 순서 지정
+- 단위없는 정수 사용
+
 
   
 
