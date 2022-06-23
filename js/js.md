@@ -251,15 +251,17 @@ const a = {
   - ES5, ES6: 기본 javascript
   - HTML DOM : HTML API
 
-  - Property
+- Property
 
 ```
-HTML
+HTML 내용
+
+document.innerHTML // DOM 객체의 내용 추가, 변경
 ```
 
-  - Method
-    - Access(접근)
-    - HTML4 API
+- Method
+  - Access(접근)
+  - HTML4 API
 
 ```
 <h1 id="heading" class="title">heading</h1>
@@ -270,23 +272,23 @@ document.getElementsByClassName('title')
 
 ```
 
-  - HTML5 API
+- HTML5 API
 ```
 <h1 id="heading" class="title">heading</h1>
 <h1 class="title">heading</h1>
 
 document.querySelector('#heading')
-document.querySelector('h1') // 첫번째 요소에만 접근하고 끝남! 두번째/세번째는 접근하지 않음
+document.querySelector('h1') // 첫번째 요소에만 접근하고 끝남! 두번째,세번째는 접근하지 않음
 document.querySelector('.title') // 위와 같음
 
 document.querySelectorAll('h1') // 첫번째 것부터 병렬로 접근
 document.querySelectorAll('.title') // 위와 같음
 ```
-  - JS 동적 작업
-    - Create
-    - Read
-    - Update
-    - Delete/Remove
+- JS 동적 작업
+  - Create
+  - Read
+  - Update
+  - Delete/Remove
 
 ```
 document.createElement() //생성
@@ -300,9 +302,9 @@ document.removeCHild()
 
 - 속성 변경
   - HTML Attribute
-  ```
-
-  ```
+```
+element.setAttribute()
+```
 
 ### Form 요소
 
@@ -343,7 +345,7 @@ document.removeCHild()
     - 마우스 이벤트
       - 이동(move), 클릭(click)
     - 키보드 이벤트
-      - 내용 입력(key----)
+      - 내용 입력(key down)
 
 ### Effect(효과)
 
@@ -353,6 +355,11 @@ document.removeCHild()
 
 - image(visual) rolling / carousel 효과
   - 이미지 또는 비주얼요소를 순서대로 반복해서 보여줄 때 사용하는 효과
+  - 시작 상태와 끝 상태를 반복하는 것이 아니고 지속적으로 다음 단계로 이동
+
+```
+
+```
 
 - animation, motion 효과
   - 시작상태에서 끝상태로 변화할때 중간과정을 모두 보여주는것
@@ -360,6 +367,21 @@ document.removeCHild()
   - *** css motion 효과를 사용 *** 이것만 사용해도 충분! 적당!
    - 기본적인 CSS property(width, height, top, left ...)
    - css3 추가된 property(transform)
-   - transition 속성을 추가해서 중간과정을 표시
-   
+   - transition 속성을 추가해서 중간과정을 표시 (애니메이션처럼 보이도록!)
+
+### transition
+
+- 상태 변화의 중간 과정을 표현
+
+```
+transition: 속성 시간;
+
+transition: width 2s;
+
+transition: all 2s;
+
+transition: width 2s, height 4s;
+```
+
+알고리듬
   

@@ -6,6 +6,7 @@
 
   - Text Contents
   - Image, Video, Audio Contents
+    - Embed(ed) Contents
 
 - Structure
 
@@ -75,16 +76,16 @@ body기준
 
 ### Heading(제목)
 
-- <h>(eading) 태그
+- h(eading) 태그
 - h1 ~ h6
 
 ### Paragraph(단락)
 
-- <p>(aragraph) 태그
+- p(aragraph) 태그
 
 ```
 WYSIWYG(What You See Is What You Get)
-- html은 위지위그가 안됨
+- html은 WYSIWYG 지원이 되지 않음
 ```
 
 - 강제 줄바꿈 : br(eak)태그
@@ -94,20 +95,20 @@ WYSIWYG(What You See Is What You Get)
 - 강제 공백 : &nbsp;(Non-Break Space)(엔터티 코드)
 
 ```
-&(ampersand)
+& : ampersand
 
 엔터티 코드: 대체코드
 - 특수문자를 직접 사용하지 못할 때 대체해서 사용하는 코드
 - 이미 예약되어있는 코드들을 사용하면 다른기능이 우선인식되므로 대체 사용! ex) <, >, ' ...
 ```
 
-- <hr> 수평선 태그 (Horizontal Rule)
+- 수평선(Horizontal Rule) : hr
   - 단락을 구분하는 구분선
   - 빈 요소
 
 ### HTML Link
 
-- <a>(nchor) : 하이퍼링크 연결 태그
+- a(nchor) : 하이퍼링크 연결 태그
 - <href=""> : 목적지 정보 제공 속성, hypertext references (attribute)
 - bookmark
   - 연결된 페이지로 이동하지 않고, 같은 페이지 내에서 위아래 이동
@@ -118,18 +119,18 @@ WYSIWYG(What You See Is What You Get)
 
 - bookmark
 
-  - link
-  <a href="#target">목적지</a>
+- link
+<a href="#target">목적지</a>
 
-  -target
-  <h2 id="target">단락 제목</h2>
+-target
+<h2 id="target">단락 제목</h2>
 ```
 
 - URL(Uniform Resource Locator) : 파일(자원)위치식별자 - 상세주소
 
 - 인터넷 주소체계
 
-  - IP address(internet protocol, 인터넷 통신규약): 인터넷에서 사용하는 주소
+  - IP(Internet Protocol) address(인터넷 통신규약): 인터넷에서 사용하는 주소
   - Domain name: IP 주소를 영어단어로 표현한 것
     - 서버종류: www(웹서버)
     - 회사이름: naver, daum ..
@@ -148,7 +149,7 @@ WYSIWYG(What You See Is What You Get)
   ```
 
 ### HTML table
-
+** https://www.tablesgenerator.com/html_tables
 ```
 <table> : 테이블 작성
   <tr> : table row - 행
@@ -170,6 +171,8 @@ WYSIWYG(What You See Is What You Get)
 - ol(Ordered List): 순서 있는 목록
   - 숫자(알파벳, 한글)로 표시
 - li(List Item): 목록 아이템
+- 중첩목록(Nested List)
+  - 목록안에 작은 목록이 포함되는 경우
 
 ```
 <ul>
@@ -186,7 +189,6 @@ WYSIWYG(What You See Is What You Get)
 ```
 
 - Description List: 설명목록
-
   - dl(Description List)
   - dt(Description Title)
   - dd(Description Data)
@@ -207,6 +209,15 @@ WYSIWYG(What You See Is What You Get)
 ```
 <img src="www.naver.com/html/photo.jpg" alt="이미지 설명">
 ```
+
+- 이미지 형식
+  - 비트맵(포토샵), 벡터(일러스트레이터) 이미지
+  - 비트맵 이미지 형식
+    - jpg : 사진
+    - png : 투명 배경
+    - gif : 용량이 작음 - 로고, 애니메이션
+  - 벡터 이미지
+    - svg
 
 ### HTML Video
 
